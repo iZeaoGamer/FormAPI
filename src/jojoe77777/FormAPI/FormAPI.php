@@ -21,6 +21,8 @@ class FormAPI extends PluginBase implements Listener {
         $this->formCount = rand(0, 0xFFFFFFFF);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
+    public function getInstance() : FormAPI{
+        return self::$instance;
 
     /**
      * @param callable $function
