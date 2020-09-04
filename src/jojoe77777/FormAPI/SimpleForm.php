@@ -72,7 +72,7 @@ class SimpleForm extends Form {
         $this->data["buttons"][] = $content;
         $this->labelMap[] = $label ?? count($this->labelMap);
     }
-public function getButton(): string{
+public function getButtons(): array{
     return $this->data["buttons"];
     }
 }
